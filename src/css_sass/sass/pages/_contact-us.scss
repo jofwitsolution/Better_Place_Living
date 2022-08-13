@@ -1,0 +1,204 @@
+.page-contact-us {
+    padding-top: 3rem;
+
+    &__heading {
+
+        border-bottom: 1.2rem solid $color-primary;
+    
+     }
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(180deg, rgba($color-black, .5), rgba($color-black, 0.6)), url(../public/img/bpl-12.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+        
+       @include respond(tab-port) {
+        background-attachment: scroll;
+       }
+
+        @include respond(tab-port) {
+            height: 70vh;
+        }
+
+        @include respond(phone) {
+            height: 40vh;
+        }
+
+        &-border {
+            // border-bottom:  1.2rem solid $color-primary;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__header-text {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: $color-white;
+        margin-top: 3rem;
+
+        animation-name: moveInBottom;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-timing-function: ease-out;
+    }
+
+   
+
+    &__container {
+        width: 90%;
+        margin: 5rem auto;
+       
+    }
+
+    &__row {
+        display: flex;       
+        justify-content: space-between;
+
+        @include respond(tab-port) {
+           flex-direction: column; 
+        //    align-items: center;
+        }
+
+    }
+
+    &__form-info {
+        flex: 0 1 60%;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+
+        @include respond(phone) {
+            flex: 0 1 100%;
+         }
+    }
+
+    &__form {
+        font-size: $small-font-size;
+    }
+
+    &__form-row {
+        margin-bottom: 1rem;
+        
+        label {
+            display: block;
+            font-weight: 600;
+            color: $color-secondary-dark;
+
+            span {
+                color: red;
+            }
+        }
+
+        input {
+            border: 3px solid $color-black;
+            width: 60%;
+            height: 4rem;
+            font-size: 1.7rem;
+            padding-left: 8px;
+            outline: none;
+
+            @include respond(phone) {
+                width: 80%;
+                height: 3.5rem;
+            }
+
+            &:focus {
+                border: 2px solid $color-primary;
+            }
+        }
+
+        textarea {
+            border: 3px solid $color-black;
+            width: 80%;
+            padding-left: .8rem;
+            padding-top: .8rem;
+            font-size: 1.7rem;
+            outline: none;
+            resize: none;
+
+            @include respond(phone) {
+                width: 90%;
+            }
+            &:focus {
+                border: 2px solid $color-primary;
+            }
+        }
+
+        button {
+            text-align: center;
+            width: 8rem;
+            height: 3.5rem;
+            border-radius: 5px;
+            border-color: $color-white;
+            cursor: pointer;
+            background-color: $color-primary;
+            color: $color-white;
+
+            &:hover, &:active {
+                background-color: $color-white;
+                color: $color-primary;
+                font-weight: 700;
+                border-color: $color-primary;
+            }
+        }
+
+        p {
+            font-size: 1.3rem;
+            color: red;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__location-info {
+        flex: 0 1 30%;
+
+        @include respond(phone) {
+            margin-top: 3rem;
+
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 900;
+        }
+        h4 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+    }
+}
+
+.map-background {
+    background-image: linear-gradient(180deg, rgba($color-black, .5), rgba($color-black, 0.6)), url(../public/img/bpl-13.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapouter {
+    position:relative;
+    text-align: center;
+    height:100%;
+    width:100%;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background: none!important;
+    height:100%;
+    width:100%;
+}
