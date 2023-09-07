@@ -1,7 +1,7 @@
 {
-  "name": "better_place_living",
+  "name": "css_sass",
   "version": "1.0.0",
-  "description": "BPL",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss ../index.css -w",
@@ -12,16 +12,16 @@
     "compress:css": "node-sass css/style.prefix.css ../index.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
-  "author": "Jonas",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.7",
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
     "concat": "^1.0.3",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.13",
-    "postcss-cli": "^9.1.0",
-    "postcss-import": "^14.1.0"
-  },
-  "dependencies": {}
+    "postcss": "^8.4.28",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0"
+  }
 }

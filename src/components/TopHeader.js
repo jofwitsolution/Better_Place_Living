@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const TopHeader = () => {
   return (
-    <nav className="navbar fixed-top bg">
+    <nav className="topheader bg">
       <div className="container-fluid py-2 topheader-nav-container">
         <a className="navbar-brand ms-5" href="/">
           <img
@@ -29,15 +29,23 @@ const TopHeader = () => {
             }
             to="/about-us"
           >
-            About us
+            About
           </NavLink>
+          {/* <NavLink
+            className={({ isActive }) =>
+              isActive ? "topheader-nav__active" : undefined
+            }
+            to="/mental-health"
+          >
+            Mental health
+          </NavLink> */}
           <NavLink
             className={({ isActive }) =>
               isActive ? "topheader-nav__active" : undefined
             }
             to="/our-services"
           >
-            Our services
+            Services
           </NavLink>
           <NavLink
             className={({ isActive }) =>
@@ -45,7 +53,7 @@ const TopHeader = () => {
             }
             to="/contact-us"
           >
-            Contact us
+            Contact
           </NavLink>
         </div>
       </div>

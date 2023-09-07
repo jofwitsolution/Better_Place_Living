@@ -34,6 +34,14 @@ const Navbar = () => {
               About BPL
             </a>
           </li>
+          {/* <li className="navigation__item">
+            <a as={Link} href="/mental-health" className="navigation__link">
+              <span className="navigation__link-icon">
+                <i className="fa-solid fa-arrow-right"></i>
+              </span>
+              Mental Health
+            </a>
+          </li> */}
           <li className="navigation__item">
             <a as={Link} href="/our-services" className="navigation__link">
               <span className="navigation__link-icon">

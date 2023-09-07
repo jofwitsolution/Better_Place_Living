@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Meta from "./common/Meta";
 import SectionThree from "./SectionThree";
 import TheCard from "./common/TheCard";
 
 const OurServices = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Meta title="Our Services | BPL" />
@@ -34,28 +37,21 @@ const OurServices = () => {
               course with a helping hand from us).
             </p>
           </div>
-          <div className="the-card__container">
+          <div className="the-card__mr the-card__container">
             <TheCard
-              title={"Our Housing"}
-              text={`We offer a home-to-home service. Our homes are safe, warm, and
-                welcoming for young adults and older citizens alike. We thrive on
-                creating happy homes placing emphasis on the importance of
-                creating a secure base, where our clients can feel safe and able
-                to have the freedom to cater to themselves independently to excel
-                in their social and functional skills for an overall better
-                lifestyle.`}
-              imageClass={"the-card__img-2"}
+              title={"Low Mental Health"}
+              text={`We offer a range of services for people living with Low Mental Health. 
+              We are also to provide Community Engagement & Inclusion Services, which provide 
+              people with purposeful and meaningful activity to support their recovery journey.`}
+              imageClass={"the-card__img-5"}
             />
           </div>
           <div className="our-services__text-box">
             <p className="paragraph">
-              We offer a home-to-home service. Our homes are safe, warm, and
-              welcoming for young adults and older citizens alike. We thrive on
-              creating happy homes placing emphasis on the importance of
-              creating a secure base, where our clients can feel safe and able
-              to have the freedom to cater to themselves independently to excel
-              in their social and functional skills for an overall better
-              lifestyle.
+              We offer a range of services for people living with Low Mental
+              Health. We are also to provide Community Engagement & Inclusion
+              Services, which provide people with purposeful and meaningful
+              activity to support their recovery journey.
             </p>
           </div>
         </div>
@@ -115,6 +111,32 @@ const OurServices = () => {
               carry out these checks. We'll make sure your home is secure at all
               times and all external doors fully meet the relevant British
               Standards as usual.
+            </p>
+          </div>
+        </div>
+        <div className="our-services__row">
+          <div className="the-card__container">
+            <TheCard
+              title={"Our Housing"}
+              text={`We offer a home-to-home service. Our homes are safe, warm, and
+                welcoming for young adults and older citizens alike. We thrive on
+                creating happy homes placing emphasis on the importance of
+                creating a secure base, where our clients can feel safe and able
+                to have the freedom to cater to themselves independently to excel
+                in their social and functional skills for an overall better
+                lifestyle.`}
+              imageClass={"the-card__img-2"}
+            />
+          </div>
+          <div className="our-services__text-box">
+            <p className="paragraph">
+              We offer a home-to-home service. Our homes are safe, warm, and
+              welcoming for young adults and older citizens alike. We thrive on
+              creating happy homes placing emphasis on the importance of
+              creating a secure base, where our clients can feel safe and able
+              to have the freedom to cater to themselves independently to excel
+              in their social and functional skills for an overall better
+              lifestyle.
             </p>
           </div>
         </div>

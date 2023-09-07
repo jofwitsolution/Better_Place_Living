@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Meta from "./common/Meta";
 import SectionThree from "./SectionThree";
 
 const AboutUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Meta title="About us | BPL" />
       <section className="about-us">
-        <div className="about-us__heading ">
+        {/* <div className="about-us__heading ">
           <div className=" u-center-text u-margin-bottom-medium">
             <h2 className="heading-secondary-big">About Us</h2>
           </div>
-        </div>
+        </div> */}
         <div className="about-us__image-1">
           <div className="about-us__image-1-text">
             <p className="paragraph-white">
@@ -72,7 +75,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="row">
+        <div className="row u-margin-bottom-big">
           <div className="u-margin-top-big u-margin-bottom-medium">
             <h4 className="heading-quaternary">Why Choose Us?</h4>
           </div>

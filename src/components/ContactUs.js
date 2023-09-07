@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Meta from "./common/Meta";
 import ContactForm from "./common/ContactForm";
 
 const ContactUs = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="page-contact-us">
       <Meta title={"Contact us | Didomi Company Limited"} />{" "}
-      <div className="page-contact-us__heading ">
+      {/* <div className="page-contact-us__heading ">
         <div className=" u-center-text u-margin-bottom-medium">
           <h2 className="heading-secondary-big">CONTACT US</h2>
         </div>
-      </div>
+      </div> */}
       <div className="page-contact-us__header">
         <h2 className="page-contact-us__header-text">For all enquiries</h2>
       </div>
@@ -31,14 +35,14 @@ const ContactUs = () => {
             <h3 className="u-margin-bottom-small">Location</h3>
             <h4>Better Place Living Ltd</h4>
             <p className="paragraph u-margin-bottom-medium">
-              1 Slate Lane, Nuneaton, <br />
-              CV10 9FL United Kingdom. <br />
+              127 Nightingale Vale, <br />
+              SE18 4EL United Kingdom. <br />
             </p>
             <h4>Contact:</h4>
             <p className="paragraph u-margin-bottom-medium">
-              <a href="tel:+440758-146-7406">0758 146 7406</a>
+              <a href="tel:+440771-234-7568">07712347568</a>
               <br />
-              <a href="tel:+440782-888-7031">0782 888 7031</a>
+              <a href="tel:+440750-618-6439">07506186439</a>
               <br />
               <a href="mailto: info@betterplaceliving.co.uk">
                 info@betterplaceliving.co.uk
@@ -55,7 +59,7 @@ const ContactUs = () => {
               width="1080"
               height="500"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=1%20Slate%20Lane,%20Nuneaton,%20CV10%209FL%20United%20Kingdom.&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=127%20Nightingale%20Vale%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               frameBorder="0"
               scrolling="no"
               marginHeight="0"

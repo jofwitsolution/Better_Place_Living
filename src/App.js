@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Stories from "./components/Stories";
+import MentalHealth from "./components/MentalHealth";
 import OurServices from "./components/OurServices";
 import ContactUs from "./components/ContactUs";
 import TopHeader from "./components/TopHeader";
@@ -29,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/stories" element={<Stories />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/mental-health" element={<MentalHealth />} />
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/" element={<Home />} />

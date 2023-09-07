@@ -11,11 +11,11 @@ const Footer = () => {
 
             <address className="u-margin-bottom-small">
               <h4>Better Place Living Ltd</h4>
-              1 Slate Lane, Nuneaton, <br />
-              CV10 9FL United Kingdom. <br />
-              <a href="tel:+440758-146-7406">0758 146 7406</a>
+              127 Nightingale Vale, <br />
+              SE18 4EL United Kingdom. <br />
+              <a href="tel:+440771-234-7568">07712347568</a>
               <br />
-              <a href="tel:+440782-888-7031">0782 888 7031</a>
+              <a href="tel:+440750-618-6439">07506186439</a>
               <br />
               <a href="mailto: info@betterplaceliving.co.uk">
                 info@betterplaceliving.co.uk

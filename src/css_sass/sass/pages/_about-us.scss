@@ -1,120 +1,119 @@
 .about-us {
-    padding-top: 3rem;
+  // padding-top: 3rem;
 
-   &__heading {
+  &__heading {
+    border-bottom: 1.2rem solid $color-primary;
+  }
 
-       border-bottom: 1.2rem solid $color-primary;
-   
+  &__image-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-black, 0.4),
+        rgba($color-black, 0.4)
+      ),
+      url(../public/img/bpl-6-large.jpg);
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem;
+    // margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // @include respond(tab-port) {
+    //   background-attachment: scroll;
+    // }
+
+    &-border {
+      //    border-bottom:  1.2rem solid $color-primary;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__image-1-text {
+    width: 80%;
+    margin-top: 15rem;
+    text-align: center;
+
+    @include respond(phone) {
+      margin-top: 0rem;
+    }
+  }
+
+  &__content {
+    margin: 0 5rem;
+    height: 100vh;
+    background-image: linear-gradient(
+        to left bottom,
+        rgba($color-white, 0.8),
+        rgba($color-white, 0.8)
+      ),
+      url(../public/img/logo-white-medium.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @include respond(tab-port) {
+      background-attachment: scroll;
+      height: 80vh;
+    }
+    @include respond(phone) {
+      background-image: none;
+      height: initial;
+    }
+  }
+
+  &__aim-and-objective > div {
+    font-size: $para-1-font-size;
+    color: $color-black;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__list-item {
+    font-size: $para-1-font-size;
+
+    @include respond(tab-port) {
+      // font-size: 4rem;
     }
 
-    &__image-1 {
-        width: 100%;
-       height: 100vh;
-       background-image: linear-gradient(to left bottom, rgba($color-black, .3), rgba($color-black, .3)), url(../public/img/bpl-6-large.jpg);
-       background-attachment: fixed;
-       background-position: center;
-       background-repeat: no-repeat;
-       background-size: cover;
-       margin-bottom: 1rem;
-       margin-top: 1rem;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-
-       @include respond(tab-port) {
-        background-attachment: scroll;
-       }
-
-       &-border {
-        //    border-bottom:  1.2rem solid $color-primary;
-           margin-bottom: 5rem;
-       }
-
+    & > ul {
+      list-style: none;
     }
 
-    &__image-1-text {
-       width: 80%;
-       margin-top: 15rem;
-       text-align: center;
+    & > ul > li::before {
+      content: "\2022";
+      color: $color-orange;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
 
-       @include respond(phone) {
-            
-        margin-top: 0rem;
-       }
+  &__item {
+    margin-bottom: 2rem;
+  }
 
+  &__image-2 {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 1rem;
+
+    @include respond(tab-land) {
+      width: 50rem;
     }
 
-    &__content {    
-        margin: 0 5rem;
-        height: 100vh;
-        background-image: linear-gradient(to left bottom, rgba($color-white, .8), rgba($color-white, .8)), url(../public/img/logo-white-medium.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        
-
-        @include respond(tab-port) {
-            background-attachment: scroll;
-            height: 54vh;
-           }
-        @include respond(phone) {
-            
-            background-image: none;
-            height: initial;
-           }
-
+    @include respond(phone) {
+      width: 30rem;
     }
 
-    &__aim-and-objective > div {
-        font-size: $para-1-font-size;
-        color: $color-black;
-        font-weight: 700;
-        margin-left: 2rem;
-        margin-bottom: 2rem;
+    @media only screen and (max-width: 16.25em) {
+      // 260px
+      width: 100%;
     }
-
-    &__list-item {
-        font-size: $para-1-font-size;
-
-        @include respond(tab-port) {
-            // font-size: 4rem;
-        }
-        
-       & > ul {
-            list-style: none;
-       }
-
-       & > ul > li::before {
-           content: "\2022"; 
-           color: $color-orange;
-           display: inline-block; 
-           width: 1em;
-           margin-left: -1em}
-        
-    }
-
-    &__item {
-        margin-bottom: 2rem;
-       
-    }
-
-    &__image-2 {
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 1rem;
-
-        @include respond(tab-land) {
-            width: 50rem;
-        }
-
-        @include respond(phone) {
-            width: 30rem;
-        }
-
-        @media only screen and (max-width: 16.25em) { // 260px
-            width: 100%;
-        }
-       
-       
-    }
-   
+  }
 }

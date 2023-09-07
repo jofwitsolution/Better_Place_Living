@@ -17,7 +17,7 @@ const SectionTwo = () => {
         build bright futures.
       </h3> */}
       <div className="row">
-        <div className="col-1-of-4">
+        <div className="col-1-of-3">
           <Link to="/our-services" className="feature-box__link">
             <div className="feature-box">
               <i className="bi bi-building feature-box__icon"></i>
@@ -31,7 +31,23 @@ const SectionTwo = () => {
             </div>
           </Link>
         </div>
-        <div className="col-1-of-4">
+        <div className="col-1-of-3">
+          <Link to="/our-services" className="feature-box__link">
+            <div className="feature-box">
+              <i className="bi bi-brightness-alt-low feature-box__icon"></i>
+              <h3 className="heading-tertiary u-margin-bottom-small feature-box__heading">
+                Low Mental Health
+              </h3>
+              <p className="feature-box__text">
+                We offer a range of services for people living with Low Mental
+                Health. We are also to provide Community Engagement & Inclusion
+                Services, which provide people with purposeful and meaningful
+                activity to support their recovery journey.
+              </p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-1-of-3">
           <Link to="/our-services" className="feature-box__link">
             <div className="feature-box">
               <i className="bi bi-house-fill feature-box__icon"></i>
@@ -47,8 +63,9 @@ const SectionTwo = () => {
             </div>
           </Link>
         </div>
-
-        <div className="col-1-of-4">
+      </div>
+      <div className="row">
+        <div className="col-1-of-3">
           <Link to="/our-services" className="feature-box__link">
             <div className="feature-box">
               <i className="bi bi-building feature-box__icon"></i>
@@ -64,7 +81,7 @@ const SectionTwo = () => {
             </div>
           </Link>
         </div>
-        <div className="col-1-of-4">
+        <div className="col-1-of-3">
           <Link to="/our-services" className="feature-box__link">
             <div className="feature-box">
               <i className="bi bi-people-fill feature-box__icon"></i>
